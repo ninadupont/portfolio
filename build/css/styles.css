@@ -1,0 +1,55 @@
+body {
+  background-color: black; }
+
+header {
+  background-color: orange;
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-row: auto; }
+  header .soMe {
+    grid-column: 12 / span 1;
+    grid-row: 1;
+    justify-self: center;
+    font-size: 30px; }
+
+.welcome {
+  background-color: #7796df;
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-row: auto; }
+  .welcome__hola {
+    font-family: "Sacramento", cursive;
+    font-size: 150px;
+    font-weight: lighter;
+    color: white;
+    grid-column: 3 / span 4;
+    grid-row: 1; }
+  .welcome__subTitle {
+    font-family: "Dosis", sans-serif;
+    font-size: 30px;
+    color: white;
+    grid-column: 3 / span 6;
+    grid-row: 2; }
+
+.about {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-row: auto; }
+  .about__hola {
+    font-family: "Sacramento", cursive;
+    font-size: 150px;
+    font-weight: lighter;
+    color: white;
+    grid-column: 5 / span 4;
+    grid-row: 1; }
+  .about__subTitle {
+    font-family: "Dosis", sans-serif;
+    font-size: 30px;
+    color: white;
+    grid-column: 5 / span 6;
+    grid-row: 2; }
+
+.work {
+  background-color: navy;
+  height: 300px; }

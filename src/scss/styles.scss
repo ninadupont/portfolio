@@ -1,0 +1,69 @@
+@import "_global.scss";
+body {
+  background-color: black;
+}
+@mixin gridContainer() {
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-row: auto;
+}
+
+header {
+  background-color: orange;
+  @include gridContainer();
+.soMe {
+  grid-column: 12 / span 1;
+  grid-row: 1;
+  justify-self: center;
+  font-size: 30px;
+  }
+}
+
+.welcome {
+  background-color: rgb(119, 150, 223);
+  @include gridContainer();
+
+  &__hola {
+    font-family: $heading;
+    font-size: $heading-size;
+    font-weight: lighter;
+    color: white;
+    grid-column: 3 / span 4;
+    grid-row: 1;
+  }
+
+  &__subTitle {
+    font-family: $main-text;
+    font-size: $subtitle-size;
+    color: white;
+    grid-column: 3 / span 6;
+    grid-row: 2;
+  }
+}
+
+.about {
+  background-color: pink;
+  @include gridContainer();
+
+  &__hola {
+    font-family: $heading;
+    font-size: $heading-size;
+    font-weight: lighter;
+    color: white;
+    grid-column: 5 / span 4;
+    grid-row: 1;
+  }
+
+  &__subTitle {
+    font-family: $main-text;
+    font-size: $subtitle-size;
+    color: white;
+    grid-column: 5 / span 6;
+    grid-row: 2;
+  }
+}
+
+.work {
+  background-color: navy;
+  height: 300px;
+}
