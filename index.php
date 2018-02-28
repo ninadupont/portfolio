@@ -12,29 +12,54 @@
 </head>
 <body>
   <header>
-        <ul class="soMe">
-          <li><i class="fab fa-instagram icon"></i></li>
-          <li><i class="fab fa-facebook-f icon"></i></li>
-        </ul>
+    <ul class="soMe">
+      <li class="soMe__icon"><i class="fab fa-instagram"></i></li>
+      <li class="soMe__icon"><i class="fab fa-facebook-f"></i></li>
+    </ul>
+    <h1 class="hola">!Hola!</h1>
+    <div class="subTitle">
+      <p>I'm Nina and this is going to be my awesome portfolio.</p>
+      <p>Yiihaaa</p>
+    </div>
+    <div class="waterWave1">
+      <img class="wavy-top" src="../src/images/wave-top.png" alt="">
+    </div>
+    <div class="waterWave2">
+      <img class="trans-wave" src="../src/images/trans-wave-top.png" alt="">
+    </div>
+    <div class="svaerfisk">
+      <img class="svaerfisk__image" src="../src/images/svaerfisk.png" alt="">
+    </div>
   </header>
 
-<section class="welcome">
-  <h1 class="welcome__hola">!Hola!</h1>
-  <div class="welcome__subTitle">
-    <p>I'm Nina, and this is going to be my awesome portfolio.</p>
-    <p>Yiihaaa</p>
-  </div>
-</section>
+<div class="divingGirl">
+  <img class="divingGirl__girl" src="../src/images/diving-girl.png" alt="">
+</div>
 
 <section class="about">
-  <h1 class="about__hola">!Hola!</h1>
+  <div class="about__transparent">
+    <img src="../src/images/transparent-layer.png" alt="">
+  </div>
+  <div class="about__leaf">
+    <img class="leaf" src="../src/images/leaf.png" alt="">
+  </div>
+  <h1 class="about__hola">This is me</h1>
   <div class="about__subTitle">
-    <p>I'm Nina, and this is going to be my awesome portfolio.</p>
-    <p>Yiihaaa</p>
+    <p>Some text here</p>
   </div>
 </section>
-<section class="work">
+<section class="skills">
+  <div class="skills__whale">
+    <img class="whales" src="../src/images/whale.png" alt="">
+  </div>
+  <h1 class="skills__hola">Skills</h1>
+  <div class="skills">
+    <p>Some text here</p>
+  </div>
+
   </section>
+  <section class="work">
+    </section>
   <footer>
   </footer>
 

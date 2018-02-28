@@ -1,55 +1,123 @@
 body {
-  background-color: black; }
+  background-color: #99ccff; }
+
+body, html {
+  height: 100%; }
 
 header {
-  background-color: orange;
   display: grid;
   grid-template-columns: repeat(12, [col] 1fr);
-  grid-template-row: auto; }
+  grid-template-rows: auto; }
   header .soMe {
     grid-column: 12 / span 1;
     grid-row: 1;
-    justify-self: center;
-    font-size: 30px; }
-
-.welcome {
-  background-color: #7796df;
-  display: grid;
-  grid-template-columns: repeat(12, [col] 1fr);
-  grid-template-row: auto; }
-  .welcome__hola {
+    font-size: 30px;
+    margin: 20% 0 0 0; }
+    header .soMe__icon {
+      text-align: center; }
+  header .hola {
     font-family: "Sacramento", cursive;
     font-size: 150px;
     font-weight: lighter;
     color: white;
     grid-column: 3 / span 4;
-    grid-row: 1; }
-  .welcome__subTitle {
+    grid-row: 1;
+    margin-top: 10%; }
+  header .subTitle {
     font-family: "Dosis", sans-serif;
     font-size: 30px;
     color: white;
     grid-column: 3 / span 6;
-    grid-row: 2; }
+    grid-row: 2;
+    margin-bottom: 18%; }
+  header .waterWave1 {
+    z-index: 10;
+    grid-row: 3;
+    grid-column: 1 / span 13;
+    margin-top: 15px; }
+    header .waterWave1 .wavy-top {
+      width: 100%; }
+  header .waterWave2 {
+    z-index: 13;
+    grid-column: 1 / span 13;
+    grid-row: 3; }
+  header .svaerfisk {
+    z-index: 10;
+    display: grid;
+    grid-column: 2 / span 4;
+    grid-row: 3;
+    grid-row-end: 4; }
+
+.divingGirl {
+  position: fixed;
+  top: 250px;
+  z-index: 11;
+  /* ajust this */
+  width: 100%;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .divingGirl__girl {
+    height: 350px;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222); }
 
 .about {
-  background-color: pink;
+  background-color: #1d6cd2;
   display: grid;
   grid-template-columns: repeat(12, [col] 1fr);
-  grid-template-row: auto; }
+  grid-template-rows: auto;
+  height: 600px; }
+  .about__transparent {
+    width: 100%;
+    z-index: 13;
+    position: absolute;
+    margin-top: -19px; }
+  .about__leaf {
+    z-index: 10;
+    position: absolute;
+    padding-left: 20% 0; }
+    .about__leaf .leaf {
+      height: 600px; }
   .about__hola {
     font-family: "Sacramento", cursive;
     font-size: 150px;
     font-weight: lighter;
     color: white;
-    grid-column: 5 / span 4;
-    grid-row: 1; }
+    grid-column: 2 / span 7;
+    grid-row: 1;
+    z-index: 14; }
   .about__subTitle {
     font-family: "Dosis", sans-serif;
     font-size: 30px;
     color: white;
-    grid-column: 5 / span 6;
+    grid-column: 3 / span 8;
+    grid-row: 2;
+    z-index: 14; }
+
+.skills {
+  background-color: #3c36c2;
+  display: grid;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-rows: auto;
+  grid-template-rows: 10; }
+  .skills__whale {
+    z-index: 10;
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    grid-row: 2;
+    grid-row-end: 5;
+    grid-column: 1 / span 13; }
+  .skills__hola {
+    grid-column: 2 / span 4;
     grid-row: 2; }
 
 .work {
-  background-color: navy;
+  background-color: #122886;
   height: 300px; }
+
+footer {
+  background-color: #07223e; }
